@@ -20,7 +20,7 @@ install:
   - if [ ${TRAVIS_PYTHON_VERSION:0:1} == "2" ]; then conda install --yes mock enum34; fi
   - pip install git+https://github.com/Theano/Theano.git@557fe6fab49262706241f0e774f3269a2ec0275b
   - pip install git+https://github.com/pymc-devs/pymc3.git
-  - conda install -f numpy
+  - conda install -y -f numpy
   - python setup.py build_ext --inplace
 
 before_script:
