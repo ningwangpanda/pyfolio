@@ -30,7 +30,6 @@ install:
   - pip install --no-deps git+https://github.com/Theano/Theano.git@557fe6fab49262706241f0e774f3269a2ec0275b
   - pip install --no-deps git+https://github.com/pymc-devs/pymc3.git
   - python setup.py build_ext --inplace
-  - conda install -f numpy pandas matplotlib
 
 before_script:
   - "flake8 pyfolio"
